@@ -1,4 +1,4 @@
-import React rom 'react';
+import React from 'react';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 
@@ -13,9 +13,9 @@ class Friends extends React.Component {
     render() {
         return (
             <div>
-                {this.props.friends.map(friend => {
+                {this.props.friends.map(friend => (
                     <Friend friend={friend} />
-                })}
+                ))}
             </div>
         )
     }
